@@ -1,0 +1,36 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.12.0",
+  "startedAt":  "2025-06-28T05:38:33.902910Z",
+  "args":  [
+    "--data",
+    "fire_smoke_new/data.yaml",
+    "--weights",
+    "yolo-facev2s-preweight.pt",
+    "--epochs",
+    "150",
+    "--batch-size",
+    "16"
+  ],
+  "program":  "C:\\Users\\10985\\smoke_fire\\YOLOFaceV2master\\train.py",
+  "codePath":  "train.py",
+  "root":  "C:\\Users\\10985\\smoke_fire\\YOLOFaceV2master",
+  "host":  "chenanran",
+  "executable":  "C:\\Users\\10985\\smoke_fire\\YOLOFaceV2master\\.venv\\Scripts\\python.exe",
+  "codePathLocal":  "train.py",
+  "cpu_count":  12,
+  "cpu_count_logical":  16,
+  "disk":  {
+    "/":  {
+      "total":  "214748360704",
+      "used":  "185024307200"
+    }
+  },
+  "memory":  {
+    "total":  "16890716160"
+  },
+  "cpu":  {
+    "count":  12,
+    "countLogical":  16
+  }
+}

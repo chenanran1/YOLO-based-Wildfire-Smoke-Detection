@@ -1,0 +1,8 @@
+{"time":"2025-06-28T13:38:34.3124043+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"C:\\Users\\10985\\smoke_fire\\YOLOFaceV2master\\wandb\\offline-run-20250628_133833-wtl2gza1\\logs\\debug-core.log"}
+{"time":"2025-06-28T13:38:34.5167338+08:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2025-06-28T13:38:34.5177819+08:00","level":"INFO","msg":"stream: created new stream","id":"wtl2gza1"}
+{"time":"2025-06-28T13:38:34.5177819+08:00","level":"INFO","msg":"stream: started","id":"wtl2gza1"}
+{"time":"2025-06-28T13:38:34.5177819+08:00","level":"INFO","msg":"handler: started","stream_id":"wtl2gza1"}
+{"time":"2025-06-28T13:38:34.5177819+08:00","level":"INFO","msg":"sender: started","stream_id":"wtl2gza1"}
+{"time":"2025-06-28T13:38:34.5177819+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"wtl2gza1"}
+{"time":"2025-06-28T13:38:34.5325502+08:00","level":"INFO","msg":"Starting system monitor"}
