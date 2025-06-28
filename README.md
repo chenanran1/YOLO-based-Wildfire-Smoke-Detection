@@ -1,1 +1,0 @@
-# YOLO-based-Wildfire-Smoke-Detection
