@@ -1,0 +1,58 @@
+# Smoke detection optimized hyperparameters
+# Optimized for smoke detection characteristics
+# python train.py --weights yolo-facev2s-preweight.pt --data fire_smoke/data.yaml --cfg models/yolov5s_v2_RFEM_MultiSEAM.yaml --batch-size 2 --epochs 100 --hyp data/hyp.smoke_optimized.yaml
+
+# Learning rate settings - optimized for smoke detection
+lr0: 0.001  # initial learning rate, stable learning for smoke detection
+lrf: 0.1  # final learning rate ratio, smoother decay
+momentum: 0.937  # SGD momentum
+weight_decay: 0.0005  # weight decay
+
+# Warmup settings - optimized for smoke detection
+warmup_epochs: 5.0  # increased warmup epochs for stable start
+warmup_momentum: 0.8  # warmup initial momentum
+warmup_bias_lr: 0.1  # warmup initial bias lr
+
+# Loss weights - optimized for smoke detection
+box: 0.05  # box loss weight
+cls: 0.3  # cls loss weight, reduced for binary classification
+landmark: 0.001  # landmark loss weight (if used)
+cls_pw: 1.0  # cls BCELoss positive_weight
+obj: 0.7  # obj loss weight
+obj_pw: 1.0  # obj BCELoss positive_weight
+
+# Repulsion Loss parameters - optimized for smoke detection
+alpha: 0.01  # RepGT loss weight
+beta: 0.1  # RepBox loss weight
+deta: 0.5  # smooth_ln parameter
+Rp_nms: 0.1  # RepGT loss nms threshold
+
+# IoU and anchor settings
+iou_t: 0.20  # IoU training threshold
+anchor_t: 4.0  # anchor-multiple threshold
+fl_gamma: 0.0  # focal loss gamma
+
+# Data augmentation - optimized for smoke detection
+# More color and brightness augmentation for different lighting conditions
+hsv_h: 0.02  # HSV hue augmentation, slightly increased
+hsv_s: 0.8  # HSV saturation augmentation, increased for different lighting
+hsv_v: 0.5  # HSV brightness augmentation, increased for different lighting
+
+# Geometric transforms - optimized for smoke detection
+degrees: 0.1  # slight rotation for rotation invariance
+translate: 0.1  # translation
+scale: 0.6  # scaling, increased for different smoke sizes
+shear: 0.0  # shear
+perspective: 0.0  # perspective transform
+
+# Flip settings
+flipud: 0.0  # up-down flip probability, not needed for smoke
+fliplr: 0.5  # left-right flip probability
+
+# Advanced augmentation
+mosaic: 1.0  # mosaic augmentation probability
+mixup: 0.1  # mixup augmentation probability, reduced to avoid over-augmentation
+
+# Other parameters
+enable_reswan: -1.0  # reswan loss
+nwd_weight: 1.0  # NWD weight 

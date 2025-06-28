@@ -1,0 +1,40 @@
+# 烟雾检测数据增强超参数配置
+# 基于原始配置，增强数据增强效果
+
+lr0: 0.001
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+box: 0.05
+cls: 0.5
+landmark: 0.001
+cls_pw: 1.0
+obj: 0.7
+obj_pw: 1.0
+alpha: 0.01
+beta: 0.1
+deta: 0.5
+Rp_nms: 0.1
+iou_t: 0.2
+anchor_t: 4.0
+fl_gamma: 0.0
+
+# 增强的数据增强参数
+hsv_h: 0.05          # 增强色调变化 (原0.015)
+hsv_s: 0.8           # 增强饱和度变化 (原0.7)
+hsv_v: 0.6           # 增强明度变化 (原0.4)
+degrees: 15.0        # 增加旋转角度 (原0.0)
+translate: 0.2       # 增加平移范围 (原0.1)
+scale: 0.8           # 增加缩放范围 (原0.5)
+shear: 5.0           # 增加剪切变换 (原0.0)
+perspective: 0.0001  # 轻微透视变换 (原0.0)
+flipud: 0.1          # 增加上下翻转 (原0.0)
+fliplr: 0.5          # 保持左右翻转
+mosaic: 1.0          # 保持Mosaic增强
+mixup: 0.1           # 增加Mixup增强 (原0.0)
+
+enable_reswan: -1.0
+nwd_weight: 1.0 
