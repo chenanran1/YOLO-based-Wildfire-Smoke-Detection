@@ -1,0 +1,13 @@
+train: fire_smoke_new/train/images
+val: fire_smoke_new/valid/images
+test: fire_smoke_new/test/images
+
+nc: 2
+names: ['fire', 'smoke']
+
+roboflow:
+  workspace: wildfireproject-l6dvc
+  project: try20
+  version: 19
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/wildfireproject-l6dvc/try20/dataset/19
